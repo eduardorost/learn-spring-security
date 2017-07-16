@@ -1,5 +1,18 @@
 # learn-spring-security
 
+## description
+a sample rest api using spring security authentication.
+
+## technologies
+* java 8
+* mysql
+* spring-boot-security
+* spring-boot-session
+
+## run
+`./gradlew bootRun`
+
+## test
 Insert admin user in database
 ```
 INSERT INTO USER VALUES (1, 1, 'admin', 'admin', CURDATE());
