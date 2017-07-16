@@ -13,9 +13,9 @@ curl -H "Content-Type: application/json" -X POST -d '{ "login":"user", "password
 
 Testing roles
 ```
-curl -X GET http://user:user@localhost:9000/v1/api/actions/user
-curl -X GET http://user:user@localhost:9000/v1/api/actions/admin
-curl -X GET http://admin:admin@localhost:9000/v1/api/actions/admin
+curl -X GET http://user:user@localhost:9000/v1/api/actions/user (STATUS 200)
+curl -X GET http://user:user@localhost:9000/v1/api/actions/admin (STATUS 403)
+curl -X GET http://admin:admin@localhost:9000/v1/api/actions/admin (STATUS 200)
 ```
 
 If you want the x-auth-token, you will need to login using this url
